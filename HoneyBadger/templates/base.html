@@ -1,0 +1,25 @@
+{% load i18n %}
+{% load static %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Merriweather&family=Montserrat+Alternates:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/general.min.css' %}">
+    <title>
+		    {% block title %}
+        {% endblock %}
+    </title>
+</head>
+<body>
+  <div>
+        {% block main %}
+        {% endblock %}
+  </div>
+ </body>
+</html>
