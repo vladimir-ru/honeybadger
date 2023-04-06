@@ -1,13 +1,17 @@
 html
 	width: 100%
-    max-width: 100%
-    overflow-x: hidden
+	max-width: 100%
+	overflow-x: hidden
+	scroll-behavior: smooth
 
+a
+	color: #fff
+	text-decoration: none
 	
 body
 	width: 100%
-    max-width: 100%
-    overflow-x: hidden
+	max-width: 100%
+	overflow-x: hidden
 	background-color: rgb(186, 186, 186)
 	margin: 0 auto
 	padding: 0 
@@ -17,12 +21,12 @@ body
 
 
 body::-webkit-scrollbar 
-  width: 0.6vw
-  background: #222
+	width: 0.6vw
+	background: #222
 
 body::-webkit-scrollbar-thumb
-  border-radius: 0.8vw
-  background: linear-gradient(180deg, #888888, #f06565)
+	border-radius: 0.8vw
+	background: linear-gradient(180deg, #888888, #f06565)
 
 
 .main
@@ -105,3 +109,27 @@ body::-webkit-scrollbar-thumb
 			font-size: 1.3vw
 			font-weight: 300
 			color: #e48080
+		
+		&-BlocksLine
+			margin-top: 10vh
+			display: flex
+			width: 100%
+			height: 100%
+
+			&-item
+				background-color: #232323
+				height: 100%
+				width: 100%
+				display: flex
+				justify-content: center
+				align-items: center
+				transition: 1s all
+
+				&:hover
+					scale: 0.9
+
+				&-text
+					text-align: center
+					font-size: 1.2vw
+					font-weight: 100
+					color: #fff
